@@ -54,8 +54,8 @@ body {
 
 .rotation-after{
     position: absolute;
-    height: 600px;
-    width: 590px;
+    height: 1200px;
+    width: 1200px;
     background: linear-gradient(
         to bottom right,
         #b827fc 0%,
@@ -70,6 +70,7 @@ body {
     animation-duration: 800ms;
     animation-delay: 0ms;
     animation-timing-function: linear;
+    transition: 2000ms all;
 }
 
 .header {
@@ -86,6 +87,23 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.header-after {
+  position: relative;
+  border: 4px solid transparent;
+  border-radius: 50%;
+  height: 1200px;
+  width: 1200px;
+  background-clip: padding-box;
+  padding: 10px;
+  /* just to show box-shadow still works fine */
+  background-color: #091011;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 2000ms all;
 }
 
 @keyframes rotation {
@@ -116,7 +134,7 @@ body {
   padding: 0;
 }
 
-.header #explore-button {
+#explore-button {
   font-family: "Shadows Into Light", cursive;
   letter-spacing: 3px;
   border: 2px solid red;
@@ -127,7 +145,7 @@ body {
   border-radius: 3px;
 }
 
-.header #explore-button:hover {
+#explore-button:hover {
   color: red;
 }
 
